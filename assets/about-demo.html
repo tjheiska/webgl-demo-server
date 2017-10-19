@@ -1,0 +1,31 @@
+<h1>About this demo</h1>
+<h2>Description</h2>
+<p>This demo draws server generated 3D points with WebGL. The demo is real time since matrix rotation is also done by the server and sent to client using sockets. It may seem there is absolutely nothing useful in it, but this implementation is more like an engine, which can be used as a base for much more useful app. One possible usage could be 3D-map, where users could upload their own spatial data and use real-time server-side filtering when inspecting it.</p>
+<h2>The goal</h2>
+<ul>
+  <li>To learn modern web development for mobile and desktop.</li>
+  <li>To have something to show to the recruiters.</li>
+  <li>To understand the performance capabilities of web apps with modern technologies and hardware.</li>
+</ul>
+<h2>What is inside?</h2>
+<ul>
+	<li>WebGL, WebSockets (Socket.IO-interface), HTML5, Font Awesome, Bootsrap 4</li>
+	<li>Angular 2+ - with TypeScript source</li>
+	<li>VPS (Virtual Private Server) running Debian/Linux Stretch</li>
+	<li>Docker container 1 - Nginx http(s) server/proxy with 'Let's Encrypt' certificate (grade A+ from SSL Labs test)</li>
+	<li>Docker container 2 - Express-Node.js server written with TypeScript - with REST API and Real-Time Socket.IO control</li>
+</ul>
+<h2>Other stuff</h2>
+<p>WebGL-rendering is implemented as texture based instanced rendering. The author has used this technique before with OpenGL TBO (Texture Buffer Object) and wanted to try it with WebGL too.</p>
+<p>XYZ-data is downloaded as PNG-compressed binary data, rendered to canvas to read the pixel data. This data is then interleaved (premultiplied alpha forced every fourth byte to 255).</p>
+<p>This app is tested with modern version of following browsers: Chrome, Firefox, Edge and Internet Explorer.</p>
+<h2>Known issues</h2>
+<p>The code needs some refactoring. Specially server.ts and app.module.ts files need to be divided to multiple files. Also didn't get too familiar with Bootstrap 4 yet, so layout design is not bullet proof. For example the size of loader-modal is not optimal at the beginning and 'Info'-dropdown-functionality should be reconsidered.</p>
+<h2>What might be coming!</h2>
+<ul>
+	<li>Label rendering, where every point can be rendered as character, text or other kind of mark.</li>
+	<li>Sessions with Socket.IO-authentication implemented with express-session and Redis-backend.</li>
+	<li>User uploads (eg. ASCII GRID -format)</li>
+	<li>C++-implemented Node.js extension for real-time filtering using Boost.Asio.</li>
+	<li>User interaction with model panning, zooming and rotating both with mouse and touch events.</li>
+</ul>

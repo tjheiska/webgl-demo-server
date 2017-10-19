@@ -1,0 +1,28 @@
+{
+  "name": "webgl-demo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express": "^4.0.37",
+    "@types/gl-matrix": "^2.3.1",
+    "@types/helmet": "0.0.36",
+    "@types/node": "^8.0.30",
+    "@types/pngjs": "^3.3.0",
+    "@types/socket.io": "^1.4.30",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "gl-matrix": "^2.4.0",
+    "helmet": "^3.8.2",
+    "pngjs": "^3.3.0",
+    "socket.io": "^2.0.3"
+  }
+}

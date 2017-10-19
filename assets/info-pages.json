@@ -1,0 +1,44 @@
+[ 
+  { 
+  	"tabId": "about-demo-tab",
+  	"href": "#about-demo",
+  	"ariaControls": "about-demo",
+  	"id": "about-demo",
+  	"label": "About demo",
+  	"src": "about-demo.html"
+  },
+  { 
+  	"tabId": "about-author-tab",
+  	"href": "#about-author",
+  	"ariaControls": "about-author",
+  	"id": "about-author",
+  	"label": "About author",
+  	"src": "about-author.html"
+  },
+  { 
+    "type": "code",
+    "tabId": "vertex-shader-tab",
+    "href": "#vertex-shader",
+    "ariaControls": "vertex-shader",
+    "id": "vertex-shader",
+    "label": "Vertex shader source",
+    "src": "/shaders/defaultshader.vert"
+  },
+  { 
+    "type": "code",
+    "tabId": "fragment-shader-tab",
+    "href": "#fragment-shader",
+    "ariaControls": "fragment-shader",
+    "id": "fragment-shader",
+    "label": "Fragment shader source",
+    "src": "/shaders/defaultshader.frag"
+  },
+    { 
+    "tabId": "download-tab",
+    "href": "#download",
+    "ariaControls": "download",
+    "id": "download",
+    "label": "Download",
+    "src": "download.html"
+  }
+]

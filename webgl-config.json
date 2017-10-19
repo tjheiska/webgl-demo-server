@@ -1,0 +1,10 @@
+{
+	"program": {
+		"vertexShader": "api/shaders/file-name/defaultshader.vert",
+		"fragmentShader": "api/shaders/file-name/defaultshader.frag"
+	},
+	"data": {
+		"url": "api/point-clouds?type=conical-helix&numSamples=10000&radius=0.1&fractionBits=7",
+		"numPoints": 10000
+	}
+}
